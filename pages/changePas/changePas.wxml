@@ -1,0 +1,14 @@
+<!--pages/changePas/changePas.wxml-->
+<view class="context">
+<label class="label">原密码</label>
+<input class="text" type='password' bindinput='old' placeholder='输入原密码'></input>
+</view>
+<view class="context">
+<label class="label">新密码</label>
+<input class="text"  type='password' bindinput='newm' placeholder='输入新密码'></input>
+</view>
+<view class="context">
+<label class="label">确认密码</label>
+<input class="text"  type='password' bindinput='confirm' placeholder='输入确认密码'></input>
+</view>
+<button bindtap="save" class="create_class">保存</button>

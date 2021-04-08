@@ -1,0 +1,26 @@
+<!--pages/mine/mine.wxml-->
+<view class="head item">
+  <open-data type="userAvatarUrl" class="userpc"></open-data>
+  <view style="width:70%;">
+    <view class="tre">{{userName}}</view>
+    <view  class="tre">
+      <label class="label">{{unitName}}</label>
+      
+    </view>
+    <view  class="tre"><label class="label">{{dataValue}}</label></view>
+  </view>
+  <!-- <open-data type="userNickName" lang="zh_CN" class="userName"></open-data> -->
+</view>
+<view class="all">
+  <!-- <view class="user item">
+<image class="pc" src="../images/userpc.png"></image>
+</view> -->
+  <view class="password item" bindtap="changePas">
+    <image class="pc" src="../images/changepas.png"></image>
+    <label style="width:80%;">修改密码</label>
+    <image class="arrow" src="../images/arrow.png"></image>
+  </view>
+  <button bindtap="tc" class="tcbtn">退出登录</button>
+</view>
+<import src="../template/tabbar.wxml" />
+<template is="tabBar" data="{{tabBar}}" />

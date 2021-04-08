@@ -1,0 +1,4 @@
+<!--components/component/component.wxml-->
+<view class="topbar" style="padding-top:{{statusBarHeight}}px">
+  <view class="textv">首页</view>
+</view>

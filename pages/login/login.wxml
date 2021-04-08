@@ -1,0 +1,27 @@
+<!--pages/login/login.wxml-->
+<view>
+<image src="../images/login.png" class="backgroud" mode="aspectFill"> 
+</image>
+
+<image src="../images/title.png" class="title"></image>
+<view>
+<image src="../images/dlk.png" class="dlk"></image>
+<image src="../images/user.png" class="user"></image>
+<image src="../images/srk.png" class="srk1"></image>
+<image src="{{isDelete ? '../images/delete.png' : ''}}" bindtap='clear' class="delete"></image>
+<image src="../images/password.png" class="password"></image>
+<image src="../images/srk.png" class="srk2"></image>
+<image bindtap='showPassword' wx:if="{{inpsd}}" src="{{isShow ? '../images/open.png' : '../images/close.png'}}" class="open"></image>
+<input type="text" placeholder-class='placeholder-class' maxlength="16" cursor-spacing="210"  focus="{{naFocus}}" class="userText" value='{{userName}}' bindinput='inName' placeholder="请输入您的用户名"></input>
+<input bindinput='getPassWord' type="{{show}}" focus="{{focus}}"  maxlength="16" cursor-spacing="160"  class="pasText" value='{{password}}' placeholder="请输入您的密码"></input>
+<view class="choose">
+      <checkbox-group name='applicanttype' class="checkbox-group" bindchange="savePsd">
+        <label class="checkbox" wx:key='*this' wx:for="{{items}}">
+          <checkbox value="{{item.val}}" checked="{{item.checked}}" />{{item.text}}
+        </label>
+      </checkbox-group>
+</view>
+<button bindtap="loginBtn" class="loginbtn">登录</button >
+</view>
+</view>
+

@@ -1,0 +1,62 @@
+<!--index.wxml-->
+
+<component-tag-name inner-text="Some text"></component-tag-name>
+
+<!-- <image src="../images/homepc.png" class="homepc"></image> -->
+<view id="page" wx:if='{{!pageState}}'>
+
+<view class="line"></view>
+<view class="cy">常用功能
+<view class="viewtb">
+<!-- 设施查询图片 -->
+
+<image bindtap="clickrw"  src="../images/rw.png" class="tb"></image>
+
+<image bindtap="clickkh" src="../images/kh.png" class="tb"></image>
+
+<image bindtap="clickjl"  src="../images/xch.png" class="tb"></image>
+
+<image bindtap="clickqx"  src="../images/qxh.png" class="tb"></image>
+
+</view>
+<view class="viewlabel">
+<label class="label">设备管理</label>
+<label class="label">实时监控</label>
+</view></view>
+<view class="line"></view>
+<view class="left">
+<!-- <view class="btn sb" bindtap="clicksb">
+<image src="../images/sb.png" class="btnpc"></image>
+<label class="sbl lab">设备新增</label>
+</view> -->
+
+<!-- <view class="btn tj" bindtap="tongji">
+<image src="../images/tj.png" class="btnpc"></image>
+<label class="tjl lab">设备删除</label>
+</view> -->
+</view>
+
+<view class="right">
+  <view class="btn tj" bindtap="queryEquList">
+  <image src="../images/tj.png" class="btnpc"></image>
+  <label class="tjl lab">设备查询</label>
+</view>
+<!-- <view class="btn dt" bindtap="clickdt">
+<image src="../images/mapSearch.png" class="btnpc"></image>
+<label class="mapl lab">地图查询</label></view> -->
+</view>
+<!-- <view class="right">
+  <view class="btn tj" bindtap="tongji">
+<image src="../images/tj.png" class="btnpc"></image>
+<label class="tjl lab">设备修改</label>
+</view>
+</view> -->
+</view>
+
+<view id="rxyx" wx:if='{{pageState}}'>
+  <image src="../images/gjbg.png" class="rxyx_img"></image>
+  <image src='../images/{{imgSrc}}' bindtap="gjStart"  class="rxyx_imgStart"></image>
+</view>
+  <import src="../template/tabbar.wxml"/> 
+ <template is="tabBar" data="{{tabBar}}"/>
+

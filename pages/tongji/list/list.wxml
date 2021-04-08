@@ -1,0 +1,19 @@
+<!--pages/tongji/list/list.wxml-->
+<component-tag-name inner-title="{{title}}" is-show-back="true"></component-tag-name>
+<view class="chartc">
+        <!--标题-->
+    <view class="title">
+       城区路灯设施
+    </view>
+    <!--绘制canvas-->
+    <canvas canvas-id="pieCanvas" class="canvas" bindtouchstart="touchHandler"></canvas>
+</view>
+
+<view class="chartc">
+        <!--标题-->
+    <view class="title">
+       郊园区路灯设施
+    </view>
+    <!--绘制canvas-->
+    <canvas canvas-id="pieCanvas1" class="canvas" bindtouchstart="touchHandler"></canvas>
+</view>

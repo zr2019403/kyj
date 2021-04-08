@@ -1,0 +1,8 @@
+{
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "component-tag-name": "../../../components/topnav/topnav"
+  },
+  "enablePullDownRefresh": true,
+  "disableScroll": true
+}

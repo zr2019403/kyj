@@ -1,0 +1,24 @@
+/* pages/sb/wzShow/wzShow.wxss */
+
+.controls{
+ position: relative;
+ width: 23%;
+ height: 8%; 
+ border-radius: 5rpx;
+ background: white;
+ padding: 10rpx;
+ left: 76%;
+ top: 83%;
+
+}
+.content{
+  font-size: 24rpx;
+  margin-bottom: 10rpx;
+}
+.content .img{
+  width:30rpx;
+  height: 40rpx;
+}
+.content .text{
+  margin-top: 4rpx;
+}

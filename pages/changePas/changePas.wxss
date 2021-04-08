@@ -1,0 +1,24 @@
+/* pages/changePas/changePas.wxss */
+.context{
+  margin: 36rpx 34rpx;
+  font-size: 32rpx;
+}
+ .label{
+  width: 73%;
+} 
+.text{
+  height: 68rpx;
+  width: calc(100% - 10px);
+  margin: 20rpx 0;
+  border: 1px solid #F3F3F3;
+  font-size: 32rpx;
+  padding-left: 10rpx;
+}
+.create_class{
+  width:100%;
+  border-radius:0;
+  background-color: #017AD7;
+  color: #fff;
+  bottom:0;
+  position: fixed;
+}

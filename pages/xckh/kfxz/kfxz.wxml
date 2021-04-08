@@ -1,0 +1,27 @@
+<view class='detail'>
+        <view 
+            wx:for="{{kfdata}}" 
+            wx:for-item="item" 
+            wx:key="item.index"  
+            bindtap="checkboxChange" 
+            data-value="{{item.kf}}"
+            data-kfse='{{item.selected}}'
+            data-index="{{index}}"  
+            checked="{{item.selected}}"
+            class="btn {{item.selected ? 'btn-selected' : ''}}" >
+            
+            <lable class='zbms'>{{item.zbms}}</lable>
+            <label class="kf {{item.zbms==null?'class-mr':''}}" style='color:{{item.selected?"#017ad7":"#d2d2d2"}}' >{{item.kf}}</label>
+            <label class='imd'><image class="imdg"  src='{{item.src}}'></image></label>
+            <label class='imgv'><image wx:if='{{item.selected}}' data-kfObj='{{item}}' catchtap='kffj' class="img"  src="../../images/pc.jpg"></image></label>
+        </view>
+        
+</view>
+<view class='df'>
+  <view class='cf'>总扣分{{fs}}分</view>
+</view>
+
+<view id='footbtn'>
+  <button bindtap='doprev' wx:if='{{bzState}}' class='doprev' id='doprev'>保存</button>
+  <button bindtap='submit' wx:if='{{bzState}}' class='doprev subBtn' id='submit'>提交</button>
+</view>

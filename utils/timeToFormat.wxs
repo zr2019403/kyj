@@ -1,0 +1,8 @@
+var filter = {
+  timeToFormat: function (value) {
+    return value.split(" ")[0]; //字符分割--时间-月份
+  }
+}
+module.exports = {
+  timeToFormat: filter.timeToFormat
+}

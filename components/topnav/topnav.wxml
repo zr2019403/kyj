@@ -1,0 +1,19 @@
+<!--component/topnav.wxml-->
+<!-- 这是自定义组件的内部WXML结构 -->
+<view style="padding-top:{{someData.statusBarHeight+someData.titleBarHeight}}px">
+  <view class="hh-header">
+    <view class="status-bar" style="height:{{someData.statusBarHeight}}px"></view>
+    <view class="title-bar" style="height:{{someData.titleBarHeight}}px">
+      <view wx:if="{{isShowBack=='true'}}" class='hh-nav-back ico-back' bindtap='goback'>
+        <image class="img" src='../../pages/images/back.png'></image>
+      </view>
+      <view wx:if="{{isShowBack=='false'}}" class='hh-nav-back ico-back' bindtap='goback'>
+        <image class="img" src='../../pages/images/homeClick.png'></image>
+      </view>
+      <view wx:if="{{isShowBack=='index'}}" class='hh-nav-back'></view>
+      <view class="hh-title">{{innerTitle}}</view>
+      <view class="hh-nav-right"></view>
+    </view>
+  </view>
+</view>
+<slot></slot>

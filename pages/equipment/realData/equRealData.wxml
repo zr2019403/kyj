@@ -1,0 +1,63 @@
+<component-tag-name inner-title="{{title}}" is-show-back="true"></component-tag-name>
+
+<view class="table">
+    <view class="table_header">
+          <view class="thb"><button class='btn' bindtap="startEqu" hover-class='btn_hover'>启 动01</button></view>
+          <view class="thb"><button class='btn' bindtap="stopEqu" hover-class='btn_hover'>停 止02</button></view>
+          <view class="thb"><button class='btn' bindtap="jzEqu" hover-class='btn_hover'>加 载08</button></view>
+          <view class="thb"><button class='btn' bindtap="xzEqu" hover-class='btn_hover'>卸 载04</button></view>
+          <view class="thb"><button class='btn' bindtap="fwEqu" hover-class='btn_hover'>复 位16</button></view>
+    </view>
+</view>
+
+<view class="container">
+  <view  class="left">
+    <view class="th1" style="font-weight:bold; font-size: 40rpx;">电表实时信息</view>
+    <view class="th1">{{words.ia}}</view>
+    <view class="th1">{{words.ib}}</view>
+    <view class="th1">{{words.ic}}</view>
+    <view class="th1">{{words.gl}}</view>
+    <view class="th1" style="font-weight:bold; font-size: 40rpx;">空压机实时数据</view>
+    <view class="th1">{{words.gqyl}}</view>
+    <view class="th1">{{words.zjscpl}}</view>
+    <view class="th1">{{words.zjscdl}}</view>
+    <view class="th1">{{words.zjdlA}}</view>
+    <view class="th1">{{words.zjdlB}}</view>
+    <view class="th1">{{words.zjdlC}}</view>
+    <view class="th1">{{words.dy}}</view>
+    <view class="th1">{{words.bcfz}}</view>
+    <view class="th1">{{words.bcyx}}</view>
+
+    <view class="th1" style="font-weight:bold; font-size: 40rpx;">流量实时信息</view>
+    <view class="th1">{{words.ssll}}</view>
+    <view class="th1">{{words.pl}}</view>
+  </view>
+
+  <view  class="right">
+    <view class="th1"></view>
+    <view class="th1">{{words.ua}}</view>
+    <view class="th1">{{words.ub}}</view>
+    <view class="th1">{{words.uc}}</view>
+    <view class="th1">{{words.hdl}}</view>
+    <view class="th1"></view>
+    <view class="th1">{{words.pqwd}}</view>       
+    <view class="th1">{{words.zjscdy}}</view>
+    <view class="th1">{{words.zjscgl}}</view>
+    <view class="th1">{{words.yfq}}</view>
+    <view class="th1">{{words.ylq}}</view>
+    <view class="th1">{{words.klq}}</view>
+    <view class="th1">{{words.rhy}}</view>
+    <view class="th1">{{words.rhz}}</view>
+    <view class="th1"></view>
+
+    <view class="th1"></view>
+    <view class="th1">{{words.wd}}</view>
+    <view class="th1">{{words.yl}}</view>
+
+  </view>
+</view>
+<view class="th3" style="margin-top: 24px;">{{words.ljll}}</view>
+ <view class="th3" style="font-weight:bold; font-size: 40rpx;">能耗数据</view>
+<view class="th3">{{words.ssbgl}}</view>
+<view class="th3">{{words.dwqlhd}}</view>
+<view class="th3">{{words.sszql}}</view>

@@ -1,0 +1,44 @@
+<component-tag-name inner-title="{{title}}" is-show-back="true"></component-tag-name>
+<view class="line1"></view>
+<view class="searchV item1">
+  <input class="textsearch lambS" bindinput='customB' placeholder='输入客户名称'></input>
+  <image class="searchwx" src="../../images/search.png" catchtap='customSelect'></image>
+</view>
+<scroll-view scroll-y class="scrolldb" scroll-with-animation="true" scroll-y="true" bindscroll="scroll" bindscrolltolower="lower" bindscrolltoupper="upper" bindtouchstart="start" bindtouchend="end">
+  <include src="../../../scroll/refreshHeaderView.wxml" />
+  <view class="table" bindtouchmove="move">
+    <view class="table_header">
+          <view class="th11">客户名称</view>
+          <view class="th21">设备编号</view>
+          <view class="th_del1">操作</view>
+    </view>
+    <block wx:for="{{words}}" wx:key="id" class="rowblock">
+      <view class="data" wx:if="{{index % 2 == 0 }}">
+        <view class="th1">
+          <view class="centerclass cell_label">{{item.customerName}}</view>
+        </view>
+        <view class="th2">
+          <view class="centerclass cell_label">{{item.equipmentCode}}</view>
+        </view>
+        <view class="th_del">
+          <view bindtap="querySsData" data-id="{{item.id}}">实时数据</view>
+        </view>
+      </view>
+      <!-- 隔行换色 -->
+      <view class="data bg_g" wx:else>
+        <view class="th1">
+          <view class="centerclass cell_label">{{item.customerName}}</view>
+        </view>
+        <view class="th2">
+          <view class="centerclass cell_label">{{item.equipmentCode}}</view>
+        </view>
+        <view class="th_del">
+          <view bindtap="querySsData" data-id="{{item.id}}">实时数据</view>
+        </view>
+      </view>
+    </block>
+  </view>
+</scroll-view>
+<include src="../../../scroll/loadMoreFooterView.wxml" />
+<import src="../../template/tabbar.wxml" />
+<template is="tabBar" data="{{tabBar}}" />

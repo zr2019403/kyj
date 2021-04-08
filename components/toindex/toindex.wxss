@@ -1,0 +1,43 @@
+/* component/topnav.wxss */
+
+.ico-back {
+  width: 50rpx;
+  height: 50rpx;
+}
+.img {
+  width: 48rpx;
+  height: 45rpx;
+  margin-left: 5rpx;
+  margin-top: 5rpx;
+}
+
+.hh-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #017AD7;
+  z-index: 99;
+}
+
+.hh-title {
+  font-size: 30rpx;
+  text-align: center;
+  color: #fff;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hh-nav-right {
+  width: 116px;
+}
+
+.hh-nav-back {
+  width: 116px;
+}

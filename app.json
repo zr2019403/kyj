@@ -1,0 +1,29 @@
+{
+  "pages": [
+    "pages/login/login",
+    "pages/index/index",
+    "pages/mine/mine",
+    "pages/changePas/changePas",
+    "pages/template/tabbar",
+    "pages/rw/list/list",
+    "pages/xckh/xckh/xckh",
+    "pages/xckh/addkh/addkh",
+    "pages/xckh/kfxz/kfxz",
+    "pages/xckh/khxq/khxq",
+    "pages/dtShow/dtShow",
+    "pages/ybck/list/list",
+    "pages/tongji/list/list",
+    "pages/logs/logs",
+    "pages/equipment/list/equipmentInfo",
+    "pages/equipment/add/addEquipment",
+    "pages/equipment/realData/equRealData"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

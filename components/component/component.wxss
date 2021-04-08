@@ -1,0 +1,15 @@
+/* components/component/component.wxss */
+.topbar {
+  width: 100%;
+  height: 82rpx;
+  background-color: #017AD7;
+  text-align: center;
+  color: white;
+  font-size: 28rpx;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+.textv{
+  margin-top: 20rpx;
+}

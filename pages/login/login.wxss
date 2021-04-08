@@ -1,0 +1,139 @@
+/* pages/login/login.wxss */
+.backgroud{
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+  background-size:100% 100%;
+  z-index: -1;
+}
+.title{
+  margin: 140rpx 84rpx 90rpx 84rpx;
+  width: 582rpx;
+  height: 168rpx;
+}
+
+.dlk{
+  margin: 0 54rpx;
+  width: 642rpx;
+  height: 572rpx;
+}
+.user{
+  top: 526rpx;
+  left:148rpx;
+  width: 40rpx;
+  height: 40rpx;
+  position:fixed; 
+  z-index: 9;
+}
+.userText{
+  top: 520rpx;
+  left:230rpx;
+  width: 326rpx;
+  position:fixed; 
+  z-index: 9999;
+  font-size: 16px;
+  border: 1rpx solid #E6E8EB;
+  line-height: 36rpx;
+  padding-left: 0rpx;
+  text-align: left;
+}
+.placeholder-class{
+  font-size: 31rpx;
+  line-height: 32rpx;
+  padding-left: 0rpx;
+  text-align: left;
+}
+.delete{
+  top: 526rpx;
+  right:144rpx;
+  width: 40rpx;
+  height: 40rpx;
+  position:fixed; 
+  border: 1rpx solid #E6E8EB;
+  z-index: 9;
+}
+.password{
+  top: 648rpx;
+  left:146rpx;
+  width: 40rpx;
+  height: 40rpx;
+  position:fixed;
+  z-index: 9; 
+}
+.pasText{
+  top: 642rpx;
+  left:230rpx;
+  width: 326rpx;
+  position:fixed; 
+  /* border: 1rpx solid #DADECC; */
+  z-index: 9;
+  font-size: 16px;
+}
+.srk1{
+  top: 502rpx;
+  left:122rpx;
+  width: 500rpx;
+  height: 88rpx;
+  position:fixed; 
+  z-index: 2;
+}
+.srk2{
+  top: 624rpx;
+  left:122rpx;
+  width: 500rpx;
+  height: 88rpx;
+  position:fixed; 
+}
+.choose{
+  top: 722rpx;
+  left:122rpx;
+  width: 500rpx;
+  height: 58rpx;
+  position:fixed; 
+  /* background-color: white; */
+  color:#fff; 
+}
+.loginbtn{
+  top: 800rpx;
+  left:122rpx;
+  width: 500rpx;
+  height: 86rpx;
+  position:fixed; 
+  background-color: #1B71BA;
+  color:#fff; 
+}
+
+.open{
+  top: 645rpx;
+  right:144rpx;
+  width: 50rpx;
+  height: 50rpx;
+  position:fixed; 
+  border: 1rpx solid #DADECC;
+  z-index: 9;
+}
+.checkbox{
+  font-size: 26rpx;
+}
+checkbox .wx-checkbox-input {
+    width: 34rpx;
+    height: 34rpx;
+    border-radius: 50%;
+}
+/*checkbox选中后样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background: #0394F0;
+  border-color:#0394F0;
+}
+/*checkbox选中后图标样式  */
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  width: 20rpx;
+  height: 20rpx;  
+  line-height: 20rpx;
+  text-align: center;
+  font-size: 22rpx;
+  color: #fff;
+  background: transparent;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}

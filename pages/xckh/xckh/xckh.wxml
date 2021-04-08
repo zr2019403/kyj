@@ -1,0 +1,41 @@
+<component-tag-name inner-title="{{title}}" is-show-back="true"></component-tag-name>
+<view class="line1"></view>
+<!-- <button bindtap="add" class="add_class">添加考核记录</button > -->
+<view class="searchV item1">
+  <input class="textsearch roadS" bindinput='road' placeholder='输入样本名称'></input>
+  <image class="searchpc" src="../../images/search.png" catchtap='roadSelect'></image>
+  <picker mode="date" value="{{date}}" start="2015-01-01" end="2099-01-01" bindchange="bindDateChange" class="picker">
+    <view>
+      <input disabled='true' class="textsearch" bindtap='bindDateChange' placeholder='选择日期' value="{{filldate}}"></input>
+      <image class="morepc" src="../../images/more.png"></image>
+    </view>
+  </picker>
+</view>
+<scroll-view scroll-y class="scrolldb" scroll-y="true" bindscroll="scroll" bindscrolltolower="lower" bindscrolltoupper="upper" bindtouchstart="start" bindtouchend="end">
+  <include src="../../../scroll/refreshHeaderView.wxml" />
+  <view style="width:100%;height:100%" bindtouchmove="move">
+
+  <view wx:key="index" class="iconusecont-div {{state==index?'active-tag':''}}" wx:for="{{words}}" data-key='{{index}}'>
+      <view class="scroll-view-item" wx:if="{{item!=null}}">
+        <navigator hover-class="none" open-type="navigate" hover-class="navigator-hover" hover-stay-time="100" url="../addkh/addkh?incid={{item.modleIncid}}&facilityincid={{item.facilityIncid}}&inspection={{item.updbasispoints}}&checkIncid={{item.checkIncid}}" class="flex-item">
+        
+          <view class="dateLabel1">{{item.basicName}}</view>
+          <view class="dateLabel1" wx:if='{{item.facilityName!=null}}' >[{{item.flagname}}-{{item.facilityName}}]</view>
+          <!-- <view class="item1">
+            <label class="dateLabel2">{{item.userName}}</label>
+            <label class="dateLabel2" style="width:80%;">{{item.filldate}}</label>
+          </view> -->
+        
+        <image wx:if='{{item.biztype=="B"}}' style='margin-top:{{item.facilityName!=null?"-85rpx":"-65rpx"}}' class="editBtn" src="../../images/editBtn.png"></image>
+     </navigator>
+
+      </view>
+
+    </view>
+
+  </view>
+
+</scroll-view>
+<include src="../../../scroll/loadMoreFooterView.wxml" />
+<import src="../../template/tabbar.wxml" />
+<template is="tabBar" data="{{tabBar}}" />

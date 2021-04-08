@@ -1,0 +1,57 @@
+.context {
+  margin: 46rpx 34rpx;
+  font-size: 32rpx;
+}
+
+.label {
+  color: #017ad7;
+  margin-top: 20rpx;
+}
+
+.weui-uploader {
+  margin-top: 10px;
+}
+
+.weui-uploader__file {
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+
+.weui-uploader__img, .imageadd {
+  width: 92px;
+  height: 92px;
+}
+
+.weui-uploader__input-box {
+  width: 100px;
+  float: left;
+}
+
+.js_file {
+  width: 90px;
+  height: 90px;
+  border: 1px solid red;
+  position: absolute;
+  opacity: 0;
+}
+
+/*删除按钮*/
+
+.delete {
+  float: right;
+  /* display: inline; */
+  position: relative;
+  right: 5rpx;
+  top: -108px;
+  /* background:red;
+  color: white; */
+  border-radius: 40rpx;
+  -webkit-border-radius: 40rpx;
+  opacity: 1;
+  height: 40rpx;
+  width: 40rpx;
+  font-size: 32rpx;
+  text-align: center;
+  font-weight: 600;
+}

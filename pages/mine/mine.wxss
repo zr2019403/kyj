@@ -1,0 +1,74 @@
+/* pages/mine/mine.wxss */
+.all{
+background-color: #F2F2F2;
+height: calc(100% - 360rpx);
+padding-top:20rpx;
+}
+.head{
+margin: 20rpx 24rpx;
+height: 212rpx;
+padding: 44rpx 24rpx;
+-moz-box-shadow:0px 0px 15px #F0F0F0;
+-webkit-box-shadow:0px 0px 15px #F0F0F0;
+box-shadow:0px 0px 15px #F0F0F0;
+border: 1px solid #EEEEEE;
+}
+.user{
+  background-color: #fff;
+  height: 160rpx;
+  padding: 40rpx 36rpx;
+}
+.userpc{
+  width: 150rpx;
+}
+.userName{
+  width: 70%;
+}
+.password{
+  /* margin-top: 20rpx; */
+  background-color: #fff;
+  height: 110rpx;
+  padding: 30rpx 36rpx;
+  color: #595959;
+}
+.pc{
+  width: 50rpx;
+  height: 50rpx;
+}
+.arrow{
+  width: 16rpx;
+  height: 26rpx;
+  float: right;
+  margin-top: 8rpx;
+}
+.item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  flex-direction:row;
+}
+.label{
+  color: #919191;
+}
+.tre{
+  white-space:nowrap; 
+  text-overflow:ellipsis; 
+  -o-text-overflow:ellipsis; 
+  overflow: hidden; 
+}
+
+.right{
+  margin-left: 20rpx;
+}
+.tcbtn{
+  width: 90%;
+  height: 86rpx; 
+  background-color: #fff;
+  border-radius: 80rpx;
+  /* margin-top: 80%; */
+  position: absolute;
+  left: 5%;
+  bottom: 15%;
+  color: #595959;
+}

@@ -1,0 +1,105 @@
+/* pages/xckh/khxz/kfxz.wxss */
+
+.detail {
+  height: 85%;
+  padding: 0px 15px;
+  border-top: 1px solid #f2f2f2;
+  overflow-y: scroll;
+}
+
+.details {
+  width: 100%;
+  /* height: 40px; */
+  padding: 15px 0px;
+  overflow-y: hidden;
+  border-bottom: 1px solid #d2d2d2;
+}
+
+.zbms {
+  width: 55%;
+  text-align: left;
+  font-size: 14px;
+  float: left;
+  overflow: hidden;
+}
+
+.kf {
+  width: 15%;
+  float: left;
+  line-height: 40px;
+  font-size: 14px;
+  color: #d2d2d2;
+  text-align: center;
+}
+.imd{
+  width: 15%;
+  float: left;
+  height: 40px;
+}
+.imgv {
+  width: 15%;
+  float: right;
+}
+.imdg{
+  width: 20px;
+  height: 20px;
+  margin-top: 20%;
+}
+
+.img {
+  width: 40px;
+  height: 40px;
+}
+
+.df {
+  height: 8%;
+  width: 100%;
+  font-size: 36rpx;
+  color: #017ad7;
+  position: fixed;
+  bottom: 92rpx;
+}
+.cf{
+float: right;
+padding-right: 20rpx;
+padding-top: 20rpx;
+text-align: center;
+}
+#footbtn {
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.doprev {
+  width: 50%;
+  float: left;
+  text-align: center;
+  font-size: 30rpx;
+  height: 92rpx;
+  line-height: 98rpx;
+  color: #fff;
+  border-radius: 0;
+  background-color:#D2D2D2;
+}
+
+.subBtn{
+  background-color: #017ad7;
+}
+
+.btn{
+      width: 100%;
+      font-size: 14rpx;
+      border-bottom: 1px solid #dcdcdc;
+      background: #fff;
+      text-align: center;
+      float: left;
+      padding: 20rpx 0 30rpx 0rpx;
+  }
+  .btn-selected{
+      border-bottom: 1px solid #017ad7;
+  }
+
+  .class-mr{
+    margin-left: 55%;
+  }

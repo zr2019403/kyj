@@ -1,0 +1,69 @@
+@import "../../../weui/imgsUpload.wxss";
+.contextnr{
+  margin: 46rpx 34rpx;
+}
+
+.message{
+  height: 200rpx;
+  width: 100%;
+  font-size: 32rpx;
+  margin-top: 26rpx;
+  border: 1px solid #F3F3F3;
+}
+.nb {
+  float: right;
+  color: #d3d3d3;
+  margin-top: -50rpx;
+  margin-right: 1%;
+  font-size: 32rpx;
+}
+
+#footbtn{
+   width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+
+.weui-uploader{
+  margin-top: 10px;
+}
+.weui-uploader__file{
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+.weui-uploader__img, .imageadd{
+   width: 90px;
+  height: 90px;
+}
+
+.weui-uploader__input-box{
+   width: 100px;
+   float: left;
+}
+.js_file{
+    width: 90px;
+  height: 90px;
+  border: 1px solid red;
+   position:absolute;opacity:0;
+  }
+
+
+
+#donext{
+  width: 100%;
+  float: left;
+  text-align: center;
+  font-size: 30rpx;
+  height: 92rpx;
+  line-height: 98rpx;
+  color: #fff;
+  border-radius: 0; 
+}
+
+
+#donext{
+  background-color:#017AD7
+
+} 
+

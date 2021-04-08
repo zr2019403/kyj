@@ -1,0 +1,114 @@
+@import '../../../scroll/refreshView.wxss';
+.searchpc{
+  width: 38rpx;
+  height: 38rpx;
+  position: fixed;
+  z-index: 9;
+  left: 400rpx;
+  top: 50rpx;
+}
+.lambS{
+  width: 60%;
+}
+.searchV{
+  padding: 25rpx 32rpx;
+}
+
+.searchwx{
+  width: 38rpx;
+  height: 38rpx;
+  position: fixed;
+  z-index: 9;
+  left: 400rpx;
+  top: 50rpx;
+}
+.textsearch{
+  background-color: #F6F6F6;
+  height: 80rpx;
+  font-size: 32rpx;
+  padding: 0 10rpx;
+  float: left;
+}
+/* pages/sb/list/list.wxss */
+
+
+.add_class {
+  /* background-color: #fff;  */
+  width: 90%;
+  height: 80rpx;
+  color: #017ad7;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+  font-size: 16px;
+  border-radius: 50rpx;
+  border: 1px solid #017ad7;
+}
+
+.scrolldb {
+  height: calc(100% - 228rpx);
+}
+
+.scroll-view-item {
+  border-bottom: 2rpx solid #eee;
+  margin: 0 36rpx;
+  padding: 30rpx 0;
+}
+
+.item1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  flex-direction: row;
+}
+
+.dateLabel1 {
+  color: #474747;
+  width: 100%;
+  word-break: break-all;
+  word-wrap: break-word;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.dateLabel2 {
+  color: #dbdbdb;
+  text-align: right;
+}
+.fb-type{
+  width: 98%;
+}
+.fb-type{
+  height: 68rpx;
+  background: #fff;
+  margin: 20rpx 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid #F3F3F3;
+  padding-left: 10rpx;
+}
+.fb-type .type-label{
+  width: 220rpx;
+  height: 38rpx;
+  flex: 1;
+  color: #333;
+  font-size: 32rpx;
+}
+.type-label{
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.fb-type .type-icon{
+  height: 38rpx;
+  width: 38rpx;
+  margin-right:10rpx;
+}
+.picker{
+  width: 100%;
+}
