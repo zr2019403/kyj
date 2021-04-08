@@ -22,7 +22,7 @@ Page({
 
     wxRealData(equId,that);
 
-    console.log('123')
+    // console.log('123')
 
     that.setData({
       loading : setInterval(function(){
